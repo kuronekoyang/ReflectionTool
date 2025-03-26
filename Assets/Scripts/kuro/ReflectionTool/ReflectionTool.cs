@@ -215,13 +215,13 @@ namespace kuro.ReflectionTool
                         }
                         else if (hi.MethodName.StartsWith("set."))
                         {
-                            var method = Type.QP(hi.MethodName.Substring(4))?.GetSetMethod();
+                            var method = Type.QP(hi.MethodName.Substring(4))?.SetMethod;
                             if (method != null)
                                 AddMemberImpl(method, true, hi.WaitForGUISkin);
                         }
                         else if (hi.MethodName.StartsWith("get."))
                         {
-                            var method = Type.QP(hi.MethodName.Substring(4))?.GetGetMethod();
+                            var method = Type.QP(hi.MethodName.Substring(4))?.GetMethod;
                             if (method != null)
                                 AddMemberImpl(method, true, hi.WaitForGUISkin);
                         }

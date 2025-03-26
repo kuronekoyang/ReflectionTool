@@ -4,7 +4,7 @@ namespace kuro.ReflectionTool
 {
     public partial class ReflectionTool
     {
-        [MenuItem("Tools/Reflection Tool/Generate Wrap")]
+        [MenuItem("Tools/Reflection Tool/Generate Wrap", priority = 211)]
         private static void GenerateWrap()
         {
             try
@@ -20,7 +20,7 @@ namespace kuro.ReflectionTool
             AssetDatabase.Refresh();
         }
 
-        [MenuItem("Tools/Reflection Tool/Generate Hook")]
+        [MenuItem("Tools/Reflection Tool/Generate Hook", priority = 212)]
         private static void GenerateHook()
         {
             try
