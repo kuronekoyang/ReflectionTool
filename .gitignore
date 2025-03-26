@@ -12,4 +12,5 @@
 *.userprefs
 *.pidb
 *.booproj
+.idea/
 UserSettings/
